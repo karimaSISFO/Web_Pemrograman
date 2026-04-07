@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Tanda Penduduk</title>
+</head>
+<body>
+    <form action="proses.php" method="post">
+        <table align="center" >
+            <tr>
+                <td bgcolor="red" colspan="2" align="center" style="color:white">
+                    Form Pengajuan KTP
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nomor Pendaftaran</td>
+                <td>
+                    <input type="text" size="2">
+                    <input type="text" size="2">
+                    <input type="text" size="2">
+                    <input type="text" size="2">
+                    <input type="text" size="2">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" name="nama" placeholder="Nama Lengkap"></td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="alamat" placeholder="Alamat Lengkap"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Provinsi</td>
+                <td>
+                    <select name="provinsi">
+                        <option>Sulawesi Selatan</option>
+                        <option>Sulawesi Tenggara</option>
+                        <option>Sulawesi Barat</option>
+                        <option>Sulawesi Tengah</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Kota</td>
+                <td>
+                    <input type="text" name="kota" placeholder="Kota">
+                    Kec.
+                    <input type="text" name="kecamatan" placeholder="Kecamatan">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pekerjaan</td>
+                <td><input type="text" name="pekerjaan" placeholder="Pekerjaan"></td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jk" value="Pria"> Pria
+                    <input type="radio" name="jk" value="Wanita"> Wanita
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tempat / Tanggal Lahir</td>
+                <td>
+                    <input type="text" name="tempat" placeholder="Tempat Lahir">
+                    <input type="date" name="tanggal">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Kelengkapan Berkas</td>
+                <td>
+                    <input type="checkbox" name="berkas[]" value="FC KK"> FC. KK
+                    <input type="checkbox" name="berkas[]" value="Pas Foto"> Pas Foto
+                    <br>
+                    <input type="checkbox" name="berkas[]" value="Surat Pengantar"> Surat Pengantar
+                    <input type="checkbox" name="berkas[]" value="Surat Domisili"> Surat Domisili
+                </td>
+            </tr>
+
+            <tr>
+                <td>File Scan</td>
+                <td><input type="file" name="file"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Pengajuan">
+                    <input type="reset" value="Batal">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
